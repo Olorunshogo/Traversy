@@ -1,0 +1,168 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --blue: rgb(9, 74, 224, 0.85);
+    --black-button: rgb(9, 9, 9, 0.85);
+}
+
+/* HTML */
+html {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 16px;
+font-weight: 400;
+}
+
+/* Body */
+body {
+    background-color: var(--white);
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* Links: Making the colour a little lighter than the Black set in the body */
+a {
+    color: #262626;
+    text-decoration: none;
+}
+
+/* Every unordered list */
+ul {
+    list-style-type: none;
+}
+
+/* Nav */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 18px 0;
+    font-size: 13px;
+    width: 90%;
+    margin: auto;
+}
+
+.main-nav .logo {
+    width: 70px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    padding: 0 10px;
+}
+
+.main-nav ul li a:hover {
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Icons */
+.fas {
+    margin: 0 12px;
+    font-size: 4px;
+    font-weight: 300;
+}
+
+
+/* Showcase */
+.showcase {
+    width: 99%;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.showcase img {
+    width: 100%;
+    height: auto;
+}
+
+.showcase-words {
+    margin: 20px;
+    width: 40%;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-words h2 {
+    font-size: 22px;
+}
+
+.showcase-words p {
+    font-size: 0.9em;
+    margin: 1.8em 0;
+}
+
+/* Buttons */
+.btn {
+    cursor: pointer;
+    display: inline;
+    border: 0;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.showcase .blue {
+    background-color: var(--blue);
+    color: #eee;
+    margin-top: 20px;
+}
+
+.showcase .blue:hover {
+    background-color: rgb(9, 74, 224, 1);
+    transition: 1s ease-in-out 0.2s; /* Transition property, duration, -timing-function, delay */
+}
+
+.showcase .black {
+    color: var(--black-button);
+} 
+
+.showcase .black:hover {
+    color: rgb(9, 9, 9, 1);
+    transition: 1s ease-in-out 0.2s;
+}
+
+/* Media player for the slideshow */
+.media-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.media-player .fas:hover {
+    transform: scale(1.2, 1.4);
+    margin: 4px;
+    padding: 8px;
+    transition: 0.2s ease-out;
+    background-color: #eee;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+}
