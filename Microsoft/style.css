@@ -102,11 +102,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 50px;
 }
 
-/* .showcase img {
-    width: 100%;
-    height: auto;
-} */
-
 .showcase-content {
     margin: 20px;
     width: 40%;
@@ -125,7 +120,6 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     display: inline;
     border: 0;
-    font-size: 6px;
     font-weight: 500;
     padding: 8px 10px;
     font-size: 12px;
@@ -151,6 +145,18 @@ h1, h2, h3, h4, h5, h6 {
 .black-btn:hover {
     color: rgb(9, 9, 9, 1);
     transition: 1s ease-in-out 0.2s;
+}
+
+.top {
+    width: 120px;
+    background-color: #ccc;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.arrow {
+    font-size: 16px;
+    margin-right: 6px;
 }
 
 /* Media player for the slideshow */
@@ -245,6 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 .business {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .business h2 {
@@ -286,4 +293,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .business-cards a:hover i{
     margin-left: 10px;
+}
+
+.follow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    font-size: 14px;
+}
+
+.follow > span {
+    margin-left: 16px
 }
