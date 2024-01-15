@@ -1,4 +1,2 @@
 // The button helps to get back to the top of the page
-topButton (
-    
-)
+document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
