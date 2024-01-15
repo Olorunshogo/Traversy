@@ -88,7 +88,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-
 /* Showcase */
 .showcase {
     background: url('/Microsoft/Img/A\ woman\ at\ the\ homepage.png') no-repeat center center/cover;
@@ -107,14 +106,26 @@ h1, h2, h3, h4, h5, h6 {
 .showcase-content {
     margin: 20px;
     width: 40%;
-    /* left: 30%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
 }
 
 .showcase-content p {
     font-size: 0.9em;
     margin: 1.8em 0;
+}
+
+.showcase .fade{
+    animation-name: fade;
+    animation-duration: 1.25s;
+}
+
+/* Bing Image */
+#bing {
+    display: none;
+}
+
+@keyframes fade {
+    from {opacity: 0.6};
+    to {opacity: 1};
 }
 
 /* Buttons */
@@ -188,6 +199,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8px;
     transition: 0.2s ease-out;
     background-color: #eee;
+}
+
+.mdeis-player .fas .fa-chevron-right:hover, .fas .fa-chevron-left:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Container */
@@ -422,10 +437,6 @@ h1, h2, h3, h4, h5, h6 {
     .main-nav ul li:last-child {
         border-bottom: 0;
     }
-
-    /* .main-nav ul.main-menu.show {
-        transform: translateX(-20px)
-    } */
 
     .main-nav ul.right-menu {
         margin-right: 50px;

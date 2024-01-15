@@ -60,7 +60,7 @@
     <!-- End of Navigation bar -->
 
     <!-- The woman smiling Showcase -->
-    <header class="showcase" id="showcase">
+    <header class="showcase fade" id="showcase">
       <!-- <img src="/Microsoft/Img/A woman at the homepage.png" alt="A woman smiling and microsoft icons are whirling around her head">  -->
       <div class="showcase-content">
         <h2>Maximise the everyday with Microsoft 365</h2>
@@ -76,14 +76,14 @@
     </header>
 
     <!-- The Bing Showcase -->
-    <!-- <header class="showcase">   
+    <header class="showcase fade" id="bing">   
         <img src="/Microsoft/Img/Bing Image.png" alt="Bing Image"> 
         <div class="showcase-content">
             <h2>Announcing the next wave of AI innovation</h2>
             <p>The new Microsoft Bing and Edge will soon feature more visual search responses, chat history, and persistent chat within Edge. We're also adding actions to help people complete tasks. </p>
             <a href="#" class="btn blue-btn">Learn more about it</a>
         </div>        
-    </header> -->
+    </header>
 
     <!-- The slideshow -->
     <div>
@@ -95,17 +95,17 @@
           <i class="fas fa-pause"></i>
         </li>
         <li>
-          <i class="fas fa-chevron-left"></i>
+          <i class="fas fa-chevron-left" onclick="plusSlides(-1)"></i>
         </li>
         <li>
-          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle" onclick="currentSlide(1)"></i>
         </li>
         <li>
-          <i class="fas fa-circle"></i>
+          <i class="fas fa-check-circle" onclick="currentSlide(2)"></i>
         </li>
 
         <li>
-          <i class="fas fa-chevron-right"></i>
+          <i class="fas fa-chevron-right" onclick="plusSlides(1)"></i>
         </li>
       </ul>
     </div>
